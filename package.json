@@ -1,6 +1,6 @@
 {
   "name": "research-atlas-obsidian",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "Guided research questions, bottlenecks, and changing judgments in your vault.",

@@ -189,7 +189,7 @@ export function createEmptyWorkspace(name = 'My research atlas') {
 export function createNode(type, values = {}) {
   option(type, Object.keys(TYPES), 'Node.type');
   const timestamp = now();
-  return normalizedNode({ id: id('node'), type, title: `Untitled ${TYPES[type].label.toLowerCase()}`, body: '', status: 'seed', tags: [], fields: {}, createdAt: timestamp, updatedAt: timestamp, ...values, type }, 'Node');
+  return normalizedNode({ id: id('node'), title: `Untitled ${TYPES[type].label.toLowerCase()}`, body: '', status: 'seed', tags: [], fields: {}, createdAt: timestamp, updatedAt: timestamp, ...values, type }, 'Node');
 }
 export function createEdge(source, target, values = {}) {
   if (source && typeof source === 'object') { values = source; source = values.source; target = values.target; }

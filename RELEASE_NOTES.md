@@ -1,3 +1,9 @@
+# 0.1.1 — Community review compatibility
+
+This patch replaces the Obsidian 1.7.2 `revealLeaf` API with the older `setActiveLeaf` API so the declared minimum version of 1.6.0 remains accurate. It also removes a duplicate object key reported by the automated review. The product behavior and workspace schema are unchanged.
+
+Extract `research-atlas-0.1.1.zip` into your vault's `.obsidian/plugins/` folder, or download `main.js`, `manifest.json`, and `styles.css` separately.
+
 # 0.1.0 — Early testing release
 
 Research Atlas brings the full web workspace into an Obsidian view: research desk, searchable graph and local neighborhoods, idea comparison, weekly plans, unified reflections and monthly reviews, detailed research guidance, all nine record types, judgment history, and reviewed JSON merges.

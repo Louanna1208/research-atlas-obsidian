@@ -151,7 +151,7 @@ export default class AtlasPlugin extends Plugin {
   async activate(){
     let leaf=this.app.workspace.getLeavesOfType(VIEW)[0];
     if(!leaf){leaf=this.app.workspace.getLeaf('tab');await leaf.setViewState({type:VIEW,active:true});}
-    await this.app.workspace.revealLeaf(leaf);
+    this.app.workspace.setActiveLeaf(leaf,{focus:true});
     return leaf.view instanceof AtlasView?leaf.view:undefined;
   }
 }
