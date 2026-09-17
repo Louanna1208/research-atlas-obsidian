@@ -51,10 +51,9 @@ Browser-specific persistence is replaced by vault saving. JSON downloads, Markdo
 
 This is an **early testing release**, not a plugin already approved for the Community Plugins directory. Obsidian desktop and mobile installation acceptance tests are still pending. The embedded interface and data layer have been tested separately; see [VALIDATION.md](VALIDATION.md).
 
-1. Download `research-atlas-0.1.1.zip` from [Releases](https://github.com/Louanna1208/research-atlas-obsidian/releases).
-2. Extract the `research-atlas` folder into `<your vault>/.obsidian/plugins/`.
-3. Confirm that `main.js`, `manifest.json`, and `styles.css` sit directly inside `.obsidian/plugins/research-atlas/`.
-4. Reload Obsidian. In **Settings → Community plugins**, enable **Research Atlas**.
+1. Create `<your vault>/.obsidian/plugins/research-atlas/`.
+2. Download `main.js`, `manifest.json`, and `styles.css` from the latest [Release](https://github.com/Louanna1208/research-atlas-obsidian/releases), and place all three files directly in that folder.
+3. Reload Obsidian. In **Settings → Community plugins**, enable **Research Atlas**.
 5. Run **Research Atlas: Open workspace**. Begin with the fictional example or choose **Start my workspace**.
 
 You can also build from source with Node 22 or newer:
