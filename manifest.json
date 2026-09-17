@@ -1,0 +1,10 @@
+{
+  "id": "research-atlas",
+  "name": "Research Atlas",
+  "version": "0.1.0",
+  "minAppVersion": "1.6.0",
+  "description": "Develop research questions, record bottlenecks, and revisit ideas when new methods or evidence change what is possible.",
+  "author": "Lan Pan",
+  "authorUrl": "https://github.com/Louanna1208",
+  "isDesktopOnly": false
+}

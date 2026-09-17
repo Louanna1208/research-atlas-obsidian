@@ -1,0 +1,19 @@
+{
+  "name": "research-atlas-obsidian",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Guided research questions, bottlenecks, and changing judgments in your vault.",
+  "license": "MIT",
+  "scripts": {
+    "build": "node esbuild.config.mjs && tsc --noEmit",
+    "test": "node --test tests/*.test.mjs vendor/atlas/*.test.mjs",
+    "check": "npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "esbuild": "0.25.5",
+    "obsidian": "1.13.1",
+    "typescript": "^5.8.3"
+  }
+}

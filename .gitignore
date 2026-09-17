@@ -1,0 +1,9 @@
+node_modules/
+main.js
+*.zip
+!vendor/atlas/agent-skill/research-atlas-memory.zip
+.DS_Store
+.obsidian/
+test-vault/
+dist/
+*.log

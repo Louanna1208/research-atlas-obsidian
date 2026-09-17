@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal research workspace for connecting questions, ideas, evidence and the decisions that shape your research.">
+  <meta name="theme-color" content="#163b43">
+  <title>Research Atlas — A growing research practice</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23163b43'/%3E%3Cpath d='M10 27 20 10 31 26M10 27 31 26' stroke='%23c1e7df' stroke-width='2' fill='none'/%3E%3Cg fill='%23fff'%3E%3Ccircle cx='10' cy='27' r='3'/%3E%3Ccircle cx='20' cy='10' r='3'/%3E%3Ccircle cx='31' cy='26' r='3'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="graph.css">
+  <link rel="stylesheet" href="workflow.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to workspace</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Workspace navigation">
+      <a class="brand" href="./" aria-label="Research Atlas home"><span class="brand-mark" aria-hidden="true">⌘</span><span>Research Atlas<small>A growing research practice</small></span></a>
+      <button class="workspace-switch" id="workspace-switch" type="button"><span class="workspace-avatar">RA</span><span id="workspace-name">Example workspace</span><span aria-hidden="true">⌄</span></button>
+      <p class="nav-caption">WORKSPACE</p>
+      <nav id="navigation" aria-label="Main views">
+        <button type="button" data-view="home" class="nav-item"><span aria-hidden="true">⌂</span>Research desk</button>
+        <button type="button" data-view="atlas" class="nav-item active"><span aria-hidden="true">⌘</span>Research atlas</button>
+        <button type="button" data-view="portfolio" class="nav-item"><span aria-hidden="true">▥</span>Idea portfolio</button>
+        <button type="button" data-view="week" class="nav-item"><span aria-hidden="true">☷</span>This week</button>
+        <button type="button" data-view="reflections" class="nav-item"><span aria-hidden="true">◷</span>Reflections</button>
+        <button type="button" data-view="guide" class="nav-item"><span aria-hidden="true">?</span>Research guide</button>
+      </nav>
+      <p class="nav-caption">YOUR COLLECTION</p>
+      <div id="type-navigation" class="type-navigation"></div>
+      <div class="sidebar-bottom">
+        <button class="nav-item" type="button" data-action="data"><span aria-hidden="true">⇅</span>Backup & workspace</button>
+        <a class="site-link" href="https://github.com/Louanna1208/research-atlas/issues" target="_blank" rel="noopener noreferrer">Feedback & ideas <span aria-hidden="true">↗</span></a>
+        <p class="local-note">Your workspace opens where you left it.<br>Same browser, same address.</p>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="breadcrumb">Workspace <span aria-hidden="true">/</span> <span id="view-label">Research atlas</span></div>
+        <div class="topbar-actions"><span id="save-status" class="save-status" role="status">Example · session only</span><button type="button" class="button mobile-data" data-action="data" aria-label="Backup and workspace">⇅ Workspace</button><button type="button" class="button primary" data-action="new"><span aria-hidden="true">＋</span> Capture a thought</button></div>
+      </header>
+      <div id="mode-banner"></div>
+      <div id="storage-alert" role="alert"></div>
+      <main id="main" tabindex="-1"></main>
+      <footer class="workspace-footer"><span>Make room for questions that take time.</span><span>Research Atlas · 0.2</span></footer>
+    </div>
+  </div>
+  <dialog id="editor-dialog" class="dialog wide-dialog" aria-labelledby="editor-title"></dialog>
+  <dialog id="utility-dialog" class="dialog" aria-labelledby="utility-title"></dialog>
+  <dialog id="confirm-dialog" class="dialog compact-dialog" aria-labelledby="confirm-title"></dialog>
+  <dialog id="help-dialog" class="dialog wide-dialog" aria-labelledby="help-title"></dialog>
+  <dialog id="import-dialog" class="dialog import-dialog" aria-labelledby="import-title"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+  <noscript><p class="noscript">Research Atlas needs JavaScript to save and connect your notes. Please enable JavaScript.</p></noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

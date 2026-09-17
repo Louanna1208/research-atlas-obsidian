@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "id": "workspace_fictional-format-example",
+  "name": "Fictional cue study · skill format example",
+  "nodes": [
+    {
+      "id": "problem_strategy-reuse",
+      "type": "problem",
+      "title": "When does a learned strategy travel?",
+      "body": "Fictional example: the researcher asks whether a shared cue helps people recognize that a learned strategy is relevant in another task. This is a question, not an established finding.",
+      "status": "exploring",
+      "tags": ["strategy", "learning"],
+      "fields": {
+        "why": "A useful answer could distinguish recognizing a shared structure from executing a strategy after it is recognized.",
+        "uncertainty": "Final accuracy alone may not distinguish these possibilities.",
+        "sourceRef": "Fictional design note supplied solely for this example",
+        "sourceVersion": "example 1",
+        "provenance": "Fictional researcher interpretation"
+      },
+      "eventDate": "",
+      "learnedOn": "",
+      "importedAt": "",
+      "createdAt": "2026-09-16T12:00:00.000Z",
+      "updatedAt": "2026-09-16T12:00:00.000Z"
+    },
+    {
+      "id": "paper_old-reading-note",
+      "type": "paper",
+      "title": "An old reading note on strategy recognition · fictional",
+      "body": "This illustrates an old reading note imported today. Its citation and original reading date are not known in the fictional source, so no citation, URL, or learned date is invented. It should not appear as this month's new learning.",
+      "status": "archived",
+      "tags": ["strategy", "historical-note"],
+      "fields": {
+        "question": "How can recognition of a familiar problem be distinguished from successful execution?",
+        "sourceRef": "Fictional archive note; underlying paper unavailable",
+        "sourceVersion": "",
+        "sourceUrl": "",
+        "publishedOn": "",
+        "provenance": "Fictional user-reported reading; citation unverified"
+      },
+      "eventDate": "",
+      "learnedOn": "",
+      "importedAt": "",
+      "createdAt": "2026-09-16T12:00:00.000Z",
+      "updatedAt": "2026-09-16T12:00:00.000Z"
+    },
+    {
+      "id": "project_cue-comparison",
+      "type": "project",
+      "title": "Check whether the cue comparison separates explanations",
+      "body": "Fictional example: a bounded design exercise chosen by the researcher before deciding whether to run a larger study.",
+      "status": "active",
+      "tags": ["pilot", "design"],
+      "fields": {
+        "question": "Would a meaningful cue and an equally salient unrelated cue distinguish structure recognition from general attention?",
+        "explanation": "One account proposes recognition of shared structure. Another proposes increased attention.",
+        "uncertainty": "It remains unclear whether the accounts imply different observed responses.",
+        "nextStep": "Write the predictions for both accounts and look for overlap.",
+        "contribution": "In this fictional example, the researcher designs the comparison; a collaborator supplied the original task.",
+        "learning": "Practice deriving observable predictions before collecting data.",
+        "sourceRef": "Fictional design note, agreed next step",
+        "provenance": "Fictional researcher account"
+      },
+      "eventDate": "2026-09-15",
+      "learnedOn": "",
+      "importedAt": "",
+      "createdAt": "2026-09-16T12:00:00.000Z",
+      "updatedAt": "2026-09-16T12:00:00.000Z"
+    },
+    {
+      "id": "capability_action-logging",
+      "type": "capability",
+      "title": "Record and inspect action sequences in a browser task",
+      "body": "Fictional example: the researcher reports having implemented the logger. This demonstrates an implementation capability; it does not demonstrate a cognitive effect.",
+      "status": "completed",
+      "tags": ["measurement", "browser-task"],
+      "fields": {
+        "evidence": "Fictional prototype records scripted sequences; source files are not part of this format example.",
+        "contribution": "The researcher implemented the logger. A collaborator supplied the initial task design.",
+        "sourceRef": "Fictional prototype note",
+        "sourceVersion": "v2",
+        "provenance": "Fictional user-reported capability; not independently verified"
+      },
+      "eventDate": "2026-09-14",
+      "learnedOn": "2026-09-14",
+      "importedAt": "",
+      "createdAt": "2026-09-16T12:00:00.000Z",
+      "updatedAt": "2026-09-16T12:00:00.000Z"
+    },
+    {
+      "id": "claim_attention-alternative",
+      "type": "claim",
+      "title": "A salient cue might affect attention",
+      "body": "Fictional researcher interpretation: a salient cue could affect behavior through attention, so a benefit from the meaningful cue alone would not uniquely establish recognition of structure.",
+      "status": "exploring",
+      "tags": ["alternative-explanation"],
+      "fields": {
+        "claimKind": "explanation",
+        "claimStatus": "provisional",
+        "sourceRef": "Fictional design review, alternative account",
+        "sourceVersion": "example 1",
+        "provenance": "Fictional researcher interpretation"
+      },
+      "eventDate": "2026-09-15",
+      "learnedOn": "",
+      "importedAt": "",
+      "createdAt": "2026-09-16T12:00:00.000Z",
+      "updatedAt": "2026-09-16T12:00:00.000Z"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_project-addresses-problem",
+      "source": "project_cue-comparison",
+      "target": "problem_strategy-reuse",
+      "relation": "investigates",
+      "reason": "Explicitly connected in the fictional researcher's design note: the comparison is intended to narrow explanations of strategy reuse. Confirmed records acceptance of this relationship, not proof of either explanation.",
+      "status": "confirmed",
+      "createdAt": "2026-09-16T12:00:00.000Z",
+      "updatedAt": "2026-09-16T12:00:00.000Z"
+    },
+    {
+      "id": "edge_logger-may-address-measurement",
+      "source": "capability_action-logging",
+      "target": "problem_strategy-reuse",
+      "relation": "may provide measurement for",
+      "reason": "AI suggestion to review, using the fictional prototype and design notes: action paths might separate strategies with equal accuracy. This requires checking that the candidate strategies actually imply different paths. The researcher has not accepted this proposed connection.",
+      "status": "suggested",
+      "createdAt": "2026-09-16T12:00:00.000Z",
+      "updatedAt": "2026-09-16T12:00:00.000Z"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision_check-predictions-first",
+      "nodeId": "project_cue-comparison",
+      "title": "Check predictions before committing to data collection",
+      "body": "Fictional decision explicitly recorded in a design review on 2026-09-15. The record was created in the example file on 2026-09-16.",
+      "before": "A meaningful cue seemed sufficient for the planned comparison.",
+      "trigger": "The design review raised an attention explanation.",
+      "after": "The comparison must distinguish the candidate accounts to answer the intended question.",
+      "action": "Sketch predictions for a meaningful and an equally salient unrelated cue.",
+      "outcome": "evidence",
+      "createdAt": "2026-09-16T12:00:00.000Z"
+    }
+  ],
+  "reviews": [],
+  "focusIds": ["project_cue-comparison"],
+  "plans": [
+    {
+      "id": "plan_2026-09-14-cue-predictions",
+      "nodeId": "project_cue-comparison",
+      "week": "2026-09-14",
+      "action": "Sketch predictions for the matched cue comparison.",
+      "why": "Fictional researcher-selected weekly action: decide whether the design distinguishes the two candidate accounts.",
+      "outcome": "",
+      "done": false,
+      "createdAt": "2026-09-16T12:00:00.000Z",
+      "updatedAt": "2026-09-16T12:00:00.000Z"
+    }
+  ],
+  "createdAt": "2026-09-16T12:00:00.000Z",
+  "updatedAt": "2026-09-16T12:00:00.000Z"
+}
